@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeccaSKim's Portfolio</title>
+    <meta name=""description" content="Portfolio for world-renowned software engineer Becca">
+    <meta name="author" content="Becca">
+    <link rel=""icon" type="image/png" href="imgs/favicon.png"/>
+    <script src="https://kit.fontawesome.com/edee6ca0a1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="main.js" defer></script>
+</head>
+<body>
+    <!--Navbar-->
+    <nav id="navbar">
+        <ul class="navbar__menu">
+            <li style="float:right" class="navbar__menu__item active" data-link="#home">Home</li>
+            <li style="float:right" class="navbar__menu__item" data-link="#skills">Skills</li>
+            <li style="float:right" class="navbar__menu__item" data-link="#work">My Work</li>
+            <li style="float:right" class="navbar__menu__item" data-link="#contact">Contact</li>
+        </ul>
+    <!--Toggle button-->
+        <button class="navbar__toggle-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <!--Home-->
+    <section id="home" class="section">
+        <div class="home__container">
+            <a href="#home"><img src="images/Sung_Kim__33.png" alt="Sung Kim's fabicon" class="home__image"></a>
+        </div>
+    </section>
+
+    <!--About-->
+    <section id="about" class="section">
+        <div class="about__container">
+            <h3>I like learning new stuff</h3>
+            <p> <br>Frontend - selftaught
+                <br>Backend - NuCamp Backend Bootcamp
+                <br>Digital preservation librarian - preserve cultural heritage materials
+                <br>Life goal - minimalist and traveler
+                <br>Love - dogs and piano
+            </p>
+        </div>
+    </section>
+
+    <!--Skills-->
+    <section id="skills" class="section">
+        <div class="section__container">
+            <h1>Skills</h1>
+            <h3>Skills & Attributes</h3>
+            <div class="skillset">
+                <div class="skillset__left">
+                    <h3 class="skillset__title">Skills</h3>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>Python</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 80%"></div>
+                        </div>
+                        <div class="skill__description">
+                            <span>HTML</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 80%"></div>
+                        </div>
+                        <div class="skill__description">
+                            <span>CSS</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 80%"></div>
+                        </div>
+                        <div class="skill__description">
+                            <span>JavaScript</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 70%"></div>
+                        </div>
+                        <div class="skill__description">
+                            <span>SQL</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 70%"></div>
+                        </div>
+                        <div class="skill__description">
+                            <span>Django</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 60%"></div>
+                        </div>
+                        <div class="skill__description">
+                            <span>Flask</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 50%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skillset__right">
+                    <div class="tools">
+                        <h3 class="skillset__title">Tools</h3>  
+                        <ul class="tools__list"></ul>
+                            <li><span>Visual Studio Code</span></li>
+                            <li><span>Adobe Creative Suites</span></li>
+                            <li><span>Docker</span></li>
+                            <li><span>Git</span></li>
+                    </div>
+                    <div class="etc">
+                        <h3 class="skillset__etc">Cloud technologies</h3>
+                        <ul class="etc__list">
+                            <li><span>AWS</span></li>
+                            <li><span>Google Cloud</span></li>
+                            <li><span>Azure</span></li>
+                        </ul>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </section>
+
+    <!--Work-->
+    <section id="work" class="section">
+       <div class="section__container">
+        <h1>My work</h1>
+        <h3>Projects</h3>
+        <div class="work__categories">
+            <button class="category__btn selected" data-filter="*">All<span class="category__count">6</span></button>
+            <button class="category__btn" data-filter="front-end">Front-end<span class="category__count">2</span></button>
+            <button class="category__btn" data-filter="back-end">Back-end<span class="category__count">2</span></button>
+            <button class="category__btn" data-filter="mobile">Mobile<span class="category__count">2</span></button>
+        </div>
+        <div class="work__projects">
+            <a href="" class="project" target="blank" data-type="front-end">
+                <img class="project_img" src="images/ProjectExample1.jpg" alt="Screen capture of project 1">
+                <div class="project__description">
+                    <h3>Project 1</h3>
+                    <span>Clone coding with HTML and CSS</span>
+                </div>
+            </a>
+            <a href="" class="project" target="blank" data-type="back-end">
+                <img class="project_img" src="images/ProjectExample2.jpg" alt="Screen capture of project 2">
+                <div class="project__description">
+                    <h3>Project 2</h3>
+                    <span>Clone coding with HTML and CSS</span>
+                </div>
+            </a>
+            <a href="" class="project" target="blank" data-type="mobile">
+                <img class="project_img" src="images/ProjectExample3.jpg" alt="Screen capture of project 3">
+                <div class="project__description">
+                    <h3>Project 3</h3>
+                    <span>Clone coding with HTML and CSS</span>
+                </div>
+            </a>
+            <a href="" class="project" target="blank" data-type="mobile">
+                <img class="project_img" src="images/ProjectExample4.jpg" alt="Screen capture of project 4">
+                <div class="project__description">
+                    <h3>Project 4</h3>
+                    <span>Clone coding with HTML and CSS</span>
+                </div>
+            </a>
+            <a href="" class="project" target="blank" data-type="back-end">
+                <img class="project_img" src="images/ProjectExample5.jpg" alt="Screen capture of project 5">
+                <div class="project__description">
+                    <h3>Project 5</h3>
+                    <span>Clone coding with HTML and CSS</span>
+                </div>
+            </a>
+            <a href="" class="project" target="blank" data-type="front-end">
+                <img class="project_img" src="images/ProjectExample6.jpg" alt="Screen capture of project 6">
+                <div class="project__description">
+                    <h3>Project 6</h3>
+                    <span>Clone coding with HTML and CSS</span>
+                </div>
+            </a>
+        </div>
+       </div>
+    </section>
+
+    <!--Contact-->
+    <section id="contact" class="section">
+        <h1 class="contact__title">Contact</h1>
+        <h2 class="contact__email">sparkskim264@gmail.com</h2>
+        <div class="contact__links">
+            <a href="https://github.com/sparkskim" target="_blank">
+                <i class="fab fa-github-square"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/sung-k-03336918/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+        <p class="contact__rights">ⓒ 2022 Sung Kim - All rights reserved</p>
+    </section>
+
+    <!--Arrow up-->
+    <button class="arrow__up">
+        <i class="fas fa-arrow-circle-up"></i>
+    </button>
+
+</body>
+</html>
