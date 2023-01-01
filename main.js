@@ -30,12 +30,6 @@ navbarToggleBtn.addEventListener('click', () => {
     navbarMenu.classList.toggle('open');
 });
 
-// Make clicking 'Contact Me' button move to the section
-const homeContactBtn = document.querySelector('.home__contact');
-homeContactBtn.addEventListener('click', () => {
-    scrollIntoView('#contact');
-});
-
 // Make home transparents as scrolling down
 const home = document.querySelector('.home__container');
 const homeHeight = home.getBoundingClientRect().height;
@@ -43,25 +37,11 @@ document.addEventListener('scroll', () => {
     home.style.opacity = 1 - window.scrollY / homeHeight;
 });
 
-// Make scroll to top arrow
-const arrowUp = document.querySelector('.arrow__up');
-document.addEventListener('scroll', () => {
-    if(window.scrollY > homeHeight/2) {
-        arrowUp.classList.add('visible');
-    } else {
-        arrowUp.classList.remove('visible');
-    }
-});
-
-// Handle click on "arrow up" button
-arrowUp.addEventListener ('click', () => {
-    scrollIntoView('#home');
-});
-
 // Projects
 const workBtnContainer = document.querySelector('.work__categories');
 const projectContainer = document.querySelector('.work__projects');
 const projects = document.querySelectorAll('.project');
+
 workBtnContainer.addEventListener('click', (e) => {
     const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
     if(filter == null) {
